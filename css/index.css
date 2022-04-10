@@ -1,0 +1,421 @@
+/* 头部区域 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f7f7f7;
+}
+
+.container {
+  width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto;
+}
+
+.body-l {
+  width: 780px;
+}
+
+.body-r {
+  width: 380px;
+}
+
+header {
+  width: 780px;
+  height: 180px;
+  padding: 24px 36px;
+  background: url(../images/header.png) no-repeat;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  width: 213px;
+  height: 51px;
+}
+.time h4 {
+  width: 100px;
+  height: 51px;
+  font: normal 40px DINPro-Bold;
+  color: #6f583f;
+  /* margin-right: 16px;
+  border-right: 1px solid #6F583F; */
+}
+.time span {
+  width: 0.5px;
+  height: 24px;
+  border: 0.5px solid #6f583f;
+  margin: auto 3px;
+}
+
+.date {
+  height: 40px;
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #6f583f;
+  line-height: 22px;
+}
+
+header p,
+header span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #6f583f;
+  margin-top: 12px;
+}
+
+header span {
+  display: block;
+  margin-top: 15px;
+}
+
+/* banner部分 */
+.banner-hd {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 780px;
+  height: 48px;
+  background: #fff7f8;
+  padding: 0 20px;
+}
+
+.banner-left {
+  display: flex;
+}
+
+.banner-hd h4 {
+  color: #fd263f;
+}
+
+.choose {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.input-item {
+  margin-right: 4px;
+  line-height: 48px;
+}
+
+.view-important {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  color: #919396;
+  line-height: 20px;
+}
+
+.icon {
+  position: relative;
+  width: 36px;
+  height: 20px;
+  background: #e5e5e5;
+  border-radius: 12px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.icon:hover .icon-small {
+  transform: translateX(16px) translateY(-50%);
+  transition: all 0.4s;
+}
+
+.icon-small {
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  border-radius: 14px;
+  transition: all 0.4s;
+}
+
+.banner-bd {
+  position: relative;
+  width: 780px;
+  height: 1327px;
+  background: #ffffff;
+  padding: 32px;
+}
+
+.banner-bd h3 {
+  font-size: 18px;
+}
+.banner-bd p {
+  font-size: 14px;
+}
+
+.banner-content {
+  border-left: 2px dashed #e9e9e9;
+  margin-left: 86px;
+}
+
+.banner-bd-w {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.content-box {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 12px 0 0 30px;
+  cursor: pointer;
+}
+
+.content-box:hover p,
+.content-box:hover h3 {
+  color: #fd263f;
+  transition: all 0.3s;
+}
+
+.content-box .time {
+  position: absolute;
+  left: -80px;
+  top: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+  line-height: 20px;
+}
+
+.circle {
+  position: absolute;
+  left: -8px;
+  top: 18px;
+  width: 12px;
+  height: 12px;
+  background: #ffffff;
+  border: 2px solid #d8d8d8;
+  border-radius: 50%;
+}
+
+.huawei h3,
+.huawei p,
+.huawei .time {
+  color: red !important;
+}
+
+.huawei .circle {
+  border: 2px solid red;
+}
+
+.huawei .spot {
+  background: red;
+}
+
+.content-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+  line-height: 25px;
+  margin-bottom: 14px;
+  transition: all 0.3s;
+}
+
+.content-box p {
+  color: #333333;
+  font-weight: 400px;
+  transition: all 0.3s;
+}
+
+.all-pic {
+  height: 18px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.all-pic-a {
+  background: #f7f7f7;
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+.all-pic-a span {
+  font-size: 11px;
+  color: #919396;
+  text-align: center;
+}
+.all-pic-a img {
+  width: 12px;
+  height: 12px;
+}
+
+.img-b {
+  margin: 0 29px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-b img {
+  width: 144px;
+  height: 102px;
+  margin: 0 8px 0 0;
+}
+
+.datum {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f7f7;
+  padding: 4px 6px;
+  margin-right: 6px;
+  border-radius: 5px;
+}
+
+.data-increase {
+  width: 16px;
+  height: 16px;
+  background: url(../images/increase.png) no-repeat;
+  margin-right: 6px;
+}
+
+.data h4 {
+  margin-right: 6px;
+}
+
+.data span {
+  color: #fd263f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.keywords {
+  display: flex;
+  margin-top: 6px;
+}
+
+.tag-item {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  margin-right: 8px;
+  background: #f7f7f7;
+  border-radius: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 20px;
+}
+
+.tag-item img {
+  margin-right: 4px;
+}
+
+/* 右边扫码新闻部份 */
+.scan img {
+  width: 380px;
+  height: 527px;
+  margin-bottom: 20px;
+}
+
+.hot-article {
+  background: #ffffff;
+}
+.hot-article dt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 20px;
+  border-bottom: 2px solid #e6e6e6;
+}
+.view-all {
+  display: flex;
+  align-items: center;
+}
+.view-all span {
+  margin-right: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.first-article-item {
+  border-top: none !important;
+}
+
+.hot-article dd {
+  padding: 24px 0;
+  margin: 0 20px;
+  border-top: 2px solid #e6e6e6;
+}
+
+.hot-article dd h3 {
+  font-weight: 400;
+}
+
+.hot-article .datum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.datum span {
+  height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #999999;
+  line-height: 20px;
+}
+
+.float-tag {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+}
+
+.scroll-top {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px 2px 0px 0px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.scroll-top:hover {
+  color: #fd263f;
+  transition: all 0.3s;
+}
+
+.scroll-top::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  width: 20px;
+  height: 1px;
+  background: #e5e5e5;
+}
+
+.icon-xiangshang {
+  font-size: 24px !important;
+}
